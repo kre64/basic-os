@@ -17,9 +17,3 @@ Please compile my program using the command:
 
 Please execute the generated main.exe program using the command:
 	./main
-
-
-
-
-
-All commands are functional, the method by which I implemented preemption may be wrong.

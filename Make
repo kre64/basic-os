@@ -1,0 +1,22 @@
+#Kevin Espinola
+#CSCI 340 Section 03 Home Project
+#
+#WINDOWS MAKEFILE
+
+CC=g++
+CFLAGS=-Wall -std=c++11
+
+main: main.o functions.o pagetable.o
+    $(CC) $(CFLAGS) main.cpp
+
+main.o: main.cpp
+	$(CC) -c main.cpp -o main.o $(CFLAGS)
+
+functions.o: functions.h
+	$(CC) -c functions.h -o functions.o $(CFLAGS)
+
+pagetable.o: pagetable.h
+	$(CC) -c pagetable.h -o pagetable.o $(CFLAGS)
+
+clean:
+    rm main.o
